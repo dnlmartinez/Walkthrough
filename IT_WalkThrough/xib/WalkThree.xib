@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Application Events:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="jqc-jq-7SI">
-                    <rect key="frame" x="16" y="184" width="343" height="84"/>
+                    <rect key="frame" x="20" y="140" width="335" height="84"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="84" id="P3M-Vo-rje"/>
                     </constraints>
@@ -33,9 +33,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="otR-7x-IZA">
-                    <rect key="frame" x="30" y="352" width="315" height="85"/>
+                    <rect key="frame" x="20" y="291.5" width="335" height="84"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="85" id="WrO-f5-euL"/>
+                        <constraint firstAttribute="height" constant="84" id="WrO-f5-euL"/>
                     </constraints>
                     <string key="text">Alerts in your subscriptions.
 All pending alerts</string>
@@ -44,25 +44,24 @@ All pending alerts</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="omZ-Vp-c1Y">
-                    <rect key="frame" x="87.5" y="467" width="200" height="200"/>
+                    <rect key="frame" x="87.5" y="477" width="200" height="190"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="3ja-66-UwB"/>
+                        <constraint firstAttribute="height" constant="190" id="3ja-66-UwB"/>
                         <constraint firstAttribute="width" constant="200" id="p5A-Ly-Xdl"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" name="primary"/>
             <constraints>
-                <constraint firstItem="otR-7x-IZA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="4zT-bw-Ybn"/>
-                <constraint firstAttribute="trailing" secondItem="otR-7x-IZA" secondAttribute="trailing" constant="30" id="9Lc-ww-YOe"/>
+                <constraint firstItem="otR-7x-IZA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4zT-bw-Ybn"/>
+                <constraint firstAttribute="trailing" secondItem="otR-7x-IZA" secondAttribute="trailing" constant="20" id="9Lc-ww-YOe"/>
                 <constraint firstAttribute="centerX" secondItem="omZ-Vp-c1Y" secondAttribute="centerX" id="Dyk-mN-7ob"/>
                 <constraint firstAttribute="centerX" secondItem="otR-7x-IZA" secondAttribute="centerX" id="MgU-7P-vQS"/>
+                <constraint firstItem="otR-7x-IZA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Obq-3l-9kd"/>
                 <constraint firstAttribute="bottom" secondItem="omZ-Vp-c1Y" secondAttribute="bottom" id="RfO-lT-aJR"/>
-                <constraint firstItem="jqc-jq-7SI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="184" id="Umd-PJ-bWx"/>
-                <constraint firstItem="omZ-Vp-c1Y" firstAttribute="top" secondItem="otR-7x-IZA" secondAttribute="bottom" constant="30" id="a5E-LO-3pF"/>
-                <constraint firstItem="jqc-jq-7SI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ajf-x4-h50"/>
-                <constraint firstAttribute="centerX" secondItem="jqc-jq-7SI" secondAttribute="centerX" id="gGs-1S-T9u"/>
-                <constraint firstAttribute="trailing" secondItem="jqc-jq-7SI" secondAttribute="trailing" constant="16" id="jmr-jF-qDD"/>
+                <constraint firstItem="jqc-jq-7SI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="Umd-PJ-bWx"/>
+                <constraint firstItem="jqc-jq-7SI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ajf-x4-h50"/>
+                <constraint firstAttribute="trailing" secondItem="jqc-jq-7SI" secondAttribute="trailing" constant="20" id="jmr-jF-qDD"/>
             </constraints>
             <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>

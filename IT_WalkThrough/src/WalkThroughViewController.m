@@ -9,7 +9,6 @@
 #import "WalkThroughViewController.h"
 #import "WalkthroughPageViewController.h"
 
-
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
@@ -17,9 +16,9 @@
 @interface WalkThroughViewController (){
 	NSArray *lastViewConstraint;
 	NSInteger currentPage;
+    NSString *closeText;
 }
 @end
-
 
 
 @implementation WalkThroughViewController
@@ -52,27 +51,26 @@
 }
 
 
-- (void)setTitleButton:(NSString *)title{
-    [[self closeButton] setTitle:title forState:UIControlStateNormal];
+- (void)setCloseButtonTitle:(NSString *)title{
+    [self.closeButton setTitle:title forState: UIControlStateNormal];
+    closeText = title;
 }
 
+
 - (void)addViewController:(UIViewController *)vc {
-	
     [self.controllers addObject:vc];
 	[vc.view setTranslatesAutoresizingMaskIntoConstraints:NO];
 	[self.scrollview addSubview:vc.view];
 
 	NSLayoutFormatOptions options = 0;
 	NSDictionary *metricDict = @{@"w": @(SCREEN_WIDTH), @"h": @(SCREEN_HEIGHT)};
-
 	NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[view(h)]" options:options metrics:metricDict views:@{@"view":vc.view}];
     
 	[vc.view addConstraints:constraints];
-
 	constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[view(w)]" options:options metrics:metricDict views:@{@"view":vc.view}];
     
+    
 	[vc.view addConstraints:constraints];
-	
     constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[view]|" options:options metrics:metricDict views:@{@"view":vc.view}];
     
 	[self.scrollview addConstraints:constraints];
@@ -93,7 +91,7 @@
 		lastViewConstraint = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[view]-|" options:0 metrics:nil views:@{@"view": vc.view}];
 		[self.scrollview addConstraints:lastViewConstraint];
 	}
-
+    
 }
 
 
@@ -114,6 +112,9 @@
 
 - (void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
+    if (closeText != nil){
+        [self.closeButton setTitle:closeText forState: UIControlStateNormal];
+    }
 	[self.pageController setNumberOfPages:[self.controllers count]];
 	[self.pageController setCurrentPage:0];
 }
@@ -125,8 +126,6 @@
 		CGRect frame = self.scrollview.frame;
 		frame.origin.x = (CGFloat)(self.currentPage + 1) * frame.size.width;
 		[self.scrollview scrollRectToVisible:frame animated:YES];
-    }else{
-        NSLog(@"ERROR");
     }
 }
 
@@ -137,8 +136,6 @@
 		CGRect frame = self.scrollview.frame;
 		frame.origin.x = (CGFloat)(self.currentPage - 1) * frame.size.width;
 		[self.scrollview scrollRectToVisible:frame animated:YES];
-    }else{
-        NSLog(@"ERROR");
     }
 }
 
@@ -149,7 +146,6 @@
 
 
 - (void)updateUI{
-	// Get the current page
 	self.pageController.currentPage = self.currentPage;
 	[self.delegate walkthroughPageDidChange:self.currentPage];
 	[self.nextButton setHidden:(self.currentPage == [self.controllers count] - 1) ? YES : NO];
@@ -157,24 +153,19 @@
 }
 
 
+
 #pragma - Scrollview Delegate
 
 
-- (void)walkthroughDidScroll:(CGFloat)position  offset:(CGFloat)offset{
-	// required for delegate
-}
+- (void)walkthroughDidScroll:(CGFloat)position  offset:(CGFloat)offset{}
 
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollview{
 
 	for (int i=0; i < [self.controllers count]; i++){
 		UIViewController <WalkthroughPage> *vc = [self.controllers objectAtIndex:i];
-
 		CGFloat mx = ((scrollview.contentOffset.x + self.view.bounds.size.width) - (self.view.bounds.size.width * (CGFloat)i)) / self.view.bounds.size.width;
         
-		// print the mx value to get more info.
-		// println("\(i):\(mx)")
-		
 		if (mx < 2.0f && mx > -2.0f){
 			[vc walkthroughDidScroll:scrollview.contentOffset.x offset:mx];
 		}

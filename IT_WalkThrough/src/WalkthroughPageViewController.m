@@ -16,6 +16,8 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
 };
 
 
+
+
 @interface WalkthroughPageViewController () <WalkthroughPage>{
 	NSMutableArray *subsWeights;
 	IBInspectable CGPoint speed;
@@ -25,6 +27,7 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
 }
 
 @end
+
 
 
 
@@ -41,7 +44,6 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
     }else{
         self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     }
-    
     
 	if(self){
 		speed = CGPointZero;
@@ -83,7 +85,6 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
 
 - (void)viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
-	
 	[self.pageController setNumberOfPages:[self.controllers count]];
 	[self.pageController setCurrentPage:0];
 }
@@ -114,10 +115,7 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
 				[self animationLinear:i offset:offset];
 				break;
 		}
-		
-		if (animateAlpha){
-			[self animationAlpha:i offset:offset];
-		}
+		if (animateAlpha){ [self animationAlpha:i offset:offset]; }
 	}
     
 }
@@ -148,49 +146,46 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
 
 
 - (void)animationCurve:(NSInteger)index offset:(CGFloat)offset{
-	CATransform3D transform = CATransform3DIdentity;
 	
+    CATransform3D transform = CATransform3DIdentity;
 	CGFloat x  = (1.0 - offset) * 10;
 	CGPoint pt = [[subsWeights objectAtIndex:index] CGPointValue];
 	
 	transform = CATransform3DTranslate(transform, (pow(x,3) - (x * 25)) * pt.x, (pow(x,3) - (x * 20)) * pt.y, 0 );
-	NSArray *viewarray = [self.view subviews];
 	
+    NSArray *viewarray = [self.view subviews];
 	UIView *subview = [viewarray objectAtIndex:index];
 	subview.layer.transform = transform;
 }
+
 
 - (void)animationZoom:(NSInteger)index offset:(CGFloat)offset{
-	CATransform3D transform = CATransform3DIdentity;
 	
+    CATransform3D transform = CATransform3DIdentity;
 	CGFloat tmpOffset = offset;
 	
-	if(tmpOffset > 1.0){
-		tmpOffset = 1.0 + (1.0 - tmpOffset);
-	}
-	CGFloat scale = (1.0 - tmpOffset);
-	transform = CATransform3DScale(transform, 1 - scale , 1 - scale, 1.0);
-	NSArray *viewarray = [self.view subviews];
+    if(tmpOffset > 1.0){ tmpOffset = 1.0 + (1.0 - tmpOffset); }
 	
+    CGFloat scale = (1.0 - tmpOffset);
+	transform = CATransform3DScale(transform, 1 - scale , 1 - scale, 1.0);
+	
+    NSArray *viewarray = [self.view subviews];
 	UIView *subview = [viewarray objectAtIndex:index];
 	subview.layer.transform = transform;
 }
 
-- (void)animationInOut:(NSInteger)index offset:(CGFloat)offset
-{
-	CATransform3D transform = CATransform3DIdentity;
 
+- (void)animationInOut:(NSInteger)index offset:(CGFloat)offset{
+	
+    CATransform3D transform = CATransform3DIdentity;
 	CGFloat tmpOffset = offset;
 	
-	if(tmpOffset > 1.0){
-		tmpOffset = 1.0 + (1.0 - tmpOffset);
-	}
+	if(tmpOffset > 1.0){ tmpOffset = 1.0 + (1.0 - tmpOffset); }
 	
 	CGPoint pt = [subsWeights[index] CGPointValue];
-	
 	transform = CATransform3DTranslate(transform, (1.0 - tmpOffset) * pt.x * 100, (1.0 - tmpOffset) * pt.y * 100, 0);
+    
 	NSArray *viewarray = [self.view subviews];
-	
 	UIView *subview = [viewarray objectAtIndex:index];
 	subview.layer.transform = transform;
 }

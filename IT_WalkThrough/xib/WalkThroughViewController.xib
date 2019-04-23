@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -61,23 +62,25 @@
                     </connections>
                 </button>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="T5A-GY-XEf">
-                    <rect key="frame" x="147.5" y="315" width="80" height="37"/>
+                    <rect key="frame" x="147.5" y="620" width="80" height="37"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="80" id="JcF-dV-4Cn"/>
-                        <constraint firstAttribute="height" constant="37" id="qxP-QP-XRe"/>
+                        <constraint firstAttribute="height" constant="37" id="m6g-Pp-AjO"/>
+                        <constraint firstAttribute="width" constant="80" id="qH6-b3-2O8"/>
                     </constraints>
+                    <color key="pageIndicatorTintColor" name="colorAccent"/>
+                    <color key="currentPageIndicatorTintColor" white="0.98231026789999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </pageControl>
             </subviews>
             <color key="backgroundColor" name="primary"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="T5A-GY-XEf" secondAttribute="bottom" constant="10" id="1k2-0s-gkM"/>
                 <constraint firstAttribute="trailing" secondItem="Yx8-TH-Nmb" secondAttribute="trailing" constant="16" id="9bs-Rb-mdr"/>
                 <constraint firstItem="PO4-LO-P6a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="A2J-bR-VP9"/>
                 <constraint firstItem="PO4-LO-P6a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="26" id="BHT-2O-0xU"/>
                 <constraint firstAttribute="trailing" secondItem="PO4-LO-P6a" secondAttribute="trailing" constant="16" id="LyU-Un-9VQ"/>
-                <constraint firstAttribute="centerX" secondItem="T5A-GY-XEf" secondAttribute="centerX" id="MGy-6J-LFA"/>
                 <constraint firstAttribute="bottom" secondItem="ELa-Pr-CTk" secondAttribute="bottom" constant="20" id="SRT-2Z-WWU"/>
                 <constraint firstAttribute="bottom" secondItem="Yx8-TH-Nmb" secondAttribute="bottom" constant="20" id="nMQ-a2-41z"/>
-                <constraint firstItem="T5A-GY-XEf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="udd-5e-9sz"/>
+                <constraint firstItem="T5A-GY-XEf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rRp-1Y-CRd"/>
                 <constraint firstItem="ELa-Pr-CTk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="zNx-I1-1Pi"/>
             </constraints>
             <variation key="default">
@@ -90,6 +93,9 @@
     <resources>
         <image name="leftarrow.png" width="100" height="100"/>
         <image name="rightarrow.png" width="100" height="100"/>
+        <namedColor name="colorAccent">
+            <color red="0.27450980392156865" green="0.59607843137254901" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="primary">
             <color red="0.10588235294117647" green="0.21176470588235294" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

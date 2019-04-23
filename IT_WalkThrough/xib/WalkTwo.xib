@@ -35,18 +35,18 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="T2S-eL-sfY">
+                <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="T2S-eL-sfY">
                     <rect key="frame" x="35" y="132" width="100" height="66"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="UWL-qF-j6X">
-                    <rect key="frame" x="87.5" y="467" width="200" height="200"/>
+                    <rect key="frame" x="87.5" y="477" width="200" height="190"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="356-Db-PSI"/>
-                        <constraint firstAttribute="height" constant="200" id="KaP-mQ-Dvv"/>
+                        <constraint firstAttribute="height" constant="190" id="KaP-mQ-Dvv"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="7aH-qb-8lp">
+                <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="7aH-qb-8lp">
                     <rect key="frame" x="166" y="136" width="60" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -54,22 +54,21 @@
                     <rect key="frame" x="288" y="118" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-bL-2Hv">
+                <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-bL-2Hv">
                     <rect key="frame" x="103" y="89" width="50" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Several sections at your disposal." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1np-v6-P2J">
-                    <rect key="frame" x="60.5" y="325" width="254" height="85"/>
+                    <rect key="frame" x="20" y="325.5" width="335" height="84"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="254" id="XUp-yb-gqV"/>
-                        <constraint firstAttribute="height" constant="85" id="zHr-rC-Za5"/>
+                        <constraint firstAttribute="height" constant="84" id="zHr-rC-Za5"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB9-Fg-wQX">
-                    <rect key="frame" x="20" y="184" width="335" height="84"/>
+                    <rect key="frame" x="20" y="140" width="335" height="84"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="84" id="sXS-ge-SjL"/>
                     </constraints>
@@ -77,11 +76,11 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-9o-hDg">
+                <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-9o-hDg">
                     <rect key="frame" x="8" y="29" width="100" height="80"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="em7-Rh-paf">
+                <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="em7-Rh-paf">
                     <rect key="frame" x="166" y="33" width="90" height="73"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -96,11 +95,13 @@
             </subviews>
             <color key="backgroundColor" name="primary"/>
             <constraints>
-                <constraint firstItem="TB9-Fg-wQX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="184" id="0tF-Mf-zVS"/>
+                <constraint firstItem="TB9-Fg-wQX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="0tF-Mf-zVS"/>
                 <constraint firstAttribute="centerX" secondItem="UWL-qF-j6X" secondAttribute="centerX" id="6MH-mh-nVy"/>
                 <constraint firstItem="TB9-Fg-wQX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="B3f-JQ-aAL"/>
                 <constraint firstAttribute="trailing" secondItem="TB9-Fg-wQX" secondAttribute="trailing" constant="20" id="B4V-GA-8XK"/>
+                <constraint firstItem="1np-v6-P2J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="IBO-4n-mXi"/>
                 <constraint firstAttribute="centerX" secondItem="1np-v6-P2J" secondAttribute="centerX" id="Kif-Bb-QGU"/>
+                <constraint firstAttribute="trailing" secondItem="1np-v6-P2J" secondAttribute="trailing" constant="20" id="PGt-XY-0oQ"/>
                 <constraint firstAttribute="centerY" secondItem="1np-v6-P2J" secondAttribute="centerY" constant="-34" id="RkP-hH-h5L"/>
                 <constraint firstAttribute="bottom" secondItem="UWL-qF-j6X" secondAttribute="bottom" id="V8q-7U-QGZ"/>
                 <constraint firstAttribute="centerX" secondItem="TB9-Fg-wQX" secondAttribute="centerX" id="cr9-Hu-1Wy"/>

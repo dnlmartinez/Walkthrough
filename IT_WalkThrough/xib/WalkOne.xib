@@ -36,7 +36,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My IT Portal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mjg-1U-e4c">
-                    <rect key="frame" x="24" y="194" width="327" height="84"/>
+                    <rect key="frame" x="24" y="140" width="327" height="84"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="84" id="wzY-uW-qMb"/>
                     </constraints>
@@ -54,9 +54,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-aB-vMj">
-                    <rect key="frame" x="87.5" y="447" width="200" height="220"/>
+                    <rect key="frame" x="87.5" y="477" width="200" height="190"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="220" id="Cbu-ya-hh7"/>
+                        <constraint firstAttribute="height" constant="190" id="Cbu-ya-hh7"/>
                         <constraint firstAttribute="width" constant="200" id="V4q-fL-LPw"/>
                     </constraints>
                 </imageView>
@@ -67,7 +67,7 @@
                 <constraint firstAttribute="trailing" secondItem="Q8I-2S-ftc" secondAttribute="trailing" constant="20" id="1Z7-QX-LbZ"/>
                 <constraint firstAttribute="centerX" secondItem="Q8I-2S-ftc" secondAttribute="centerX" id="4oP-hP-M7Y"/>
                 <constraint firstAttribute="centerY" secondItem="Q8I-2S-ftc" secondAttribute="centerY" constant="-34.5" id="Agm-we-9Gl"/>
-                <constraint firstItem="Mjg-1U-e4c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="194" id="EBj-hv-1ma"/>
+                <constraint firstItem="Mjg-1U-e4c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="EBj-hv-1ma"/>
                 <constraint firstAttribute="bottom" secondItem="9AZ-aB-vMj" secondAttribute="bottom" id="NqP-hv-nvS"/>
                 <constraint firstAttribute="centerX" secondItem="9AZ-aB-vMj" secondAttribute="centerX" id="cEB-CO-rJp"/>
                 <constraint firstItem="Q8I-2S-ftc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="kJZ-f3-RNZ"/>
