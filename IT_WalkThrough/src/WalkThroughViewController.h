@@ -39,7 +39,7 @@
     @property (weak, nonatomic) IBOutlet UILabel *titlepage;
     @property (weak, nonatomic) IBOutlet UILabel *descriptionPage;
     @property (weak, nonatomic) IBOutlet UIImageView *imagePage;
-
+    @property (weak, nonatomic) IBOutlet UIImageView *iconPage;
 
     - (void)reInitValues;
 

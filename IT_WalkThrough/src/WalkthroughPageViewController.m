@@ -70,7 +70,8 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
 }
 
 
-- (void) setTitle:(NSString *)tit description:(NSString *)desc image:(UIImage *)img{
+- (void) setTitle:(NSString *)tit description:(NSString *)desc image:(UIImage *)img icon:(UIImage *)icon{
+    
     if(tit != nil){
         self.titlepage.text = tit;
     }
@@ -80,6 +81,10 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
     if (img != nil){
         self.imagePage.image = img;
     }
+    if (icon != nil){
+        self.iconPage.image = icon;
+    }
+    
 }
 
 

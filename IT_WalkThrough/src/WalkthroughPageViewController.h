@@ -11,6 +11,6 @@
 
 @interface WalkthroughPageViewController : WalkThroughViewController
 
-- (void) setTitle:(NSString *)tit description:(NSString *)desc image:(UIImage *)img;
+- (void) setTitle:(NSString *)tit description:(NSString *)desc image:(UIImage *)img icon:(UIImage *)icon;
 
 @end

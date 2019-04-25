@@ -9,21 +9,17 @@
 /* Begin PBXBuildFile section */
 		237A8EC52265DCA6007DE0D4 /* IT_Walkthrough.h in Headers */ = {isa = PBXBuildFile; fileRef = 237A8EC32265DCA6007DE0D4 /* IT_Walkthrough.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		237A8ECE2265DCE7007DE0D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 237A8EC42265DCA6007DE0D4 /* Info.plist */; };
-		237A8ECF2265DCFE007DE0D4 /* CustomPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 237A8EA32265C4B8007DE0D4 /* CustomPageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		237A8ED02265DCFE007DE0D4 /* WalkthroughPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 237A8EA42265C4B8007DE0D4 /* WalkthroughPageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		237A8ED12265DCFE007DE0D4 /* WalkThroughViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 237A8EA52265C4B8007DE0D4 /* WalkThroughViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		237A8ED22265DD16007DE0D4 /* WalkThroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237A8EA12265C4B8007DE0D4 /* WalkThroughViewController.m */; };
 		237A8ED32265DD16007DE0D4 /* WalkthroughPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237A8EA22265C4B8007DE0D4 /* WalkthroughPageViewController.m */; };
-		237A8ED42265DD16007DE0D4 /* CustomPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237A8EA62265C4B8007DE0D4 /* CustomPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		237A8EA12265C4B8007DE0D4 /* WalkThroughViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkThroughViewController.m; sourceTree = "<group>"; };
 		237A8EA22265C4B8007DE0D4 /* WalkthroughPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkthroughPageViewController.m; sourceTree = "<group>"; };
-		237A8EA32265C4B8007DE0D4 /* CustomPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPageViewController.h; sourceTree = "<group>"; };
 		237A8EA42265C4B8007DE0D4 /* WalkthroughPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkthroughPageViewController.h; sourceTree = "<group>"; };
 		237A8EA52265C4B8007DE0D4 /* WalkThroughViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkThroughViewController.h; sourceTree = "<group>"; };
-		237A8EA62265C4B8007DE0D4 /* CustomPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPageViewController.m; sourceTree = "<group>"; };
 		237A8EA82265C4B8007DE0D4 /* WalkTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalkTwo.xib; sourceTree = "<group>"; };
 		237A8EA92265C4B8007DE0D4 /* WalkThree.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalkThree.xib; sourceTree = "<group>"; };
 		237A8EAA2265C4B8007DE0D4 /* WalkThroughViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalkThroughViewController.xib; sourceTree = "<group>"; };
@@ -65,10 +61,8 @@
 			children = (
 				237A8EA12265C4B8007DE0D4 /* WalkThroughViewController.m */,
 				237A8EA22265C4B8007DE0D4 /* WalkthroughPageViewController.m */,
-				237A8EA32265C4B8007DE0D4 /* CustomPageViewController.h */,
 				237A8EA42265C4B8007DE0D4 /* WalkthroughPageViewController.h */,
 				237A8EA52265C4B8007DE0D4 /* WalkThroughViewController.h */,
-				237A8EA62265C4B8007DE0D4 /* CustomPageViewController.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -103,7 +97,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				237A8EC52265DCA6007DE0D4 /* IT_Walkthrough.h in Headers */,
-				237A8ECF2265DCFE007DE0D4 /* CustomPageViewController.h in Headers */,
 				237A8ED02265DCFE007DE0D4 /* WalkthroughPageViewController.h in Headers */,
 				237A8ED12265DCFE007DE0D4 /* WalkThroughViewController.h in Headers */,
 			);
@@ -180,7 +173,6 @@
 			files = (
 				237A8ED22265DD16007DE0D4 /* WalkThroughViewController.m in Sources */,
 				237A8ED32265DD16007DE0D4 /* WalkthroughPageViewController.m in Sources */,
-				237A8ED42265DD16007DE0D4 /* CustomPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
