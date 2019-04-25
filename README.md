@@ -6,6 +6,9 @@ Walkthrough is a class that helps you create Walkthroughs for your iOS Apps. It 
 It is easy to add support for more providers.
 
 
+Based on the [Library](https://github.com/n6xej/CSWXIBWalkThrough) created by Christopher Worley on 2/9/15 
+
+
 ## Getting Started:
 
 
