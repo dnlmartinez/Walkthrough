@@ -1,9 +1,9 @@
 //
-//  IT_Walkthrough.h
-//  IT_Walkthrough
+//  CSWWalkThroughViewController.h
+//  CSWWalkThroughDemo
 //
-//  Created by MacSivsa on 16/04/2019.
-//  Copyright © 2019 PSA. All rights reserved.
+//  Created by Christopher Worley on 2/9/15.
+//  Copyright (c) 2015 Christopher Worley. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -30,12 +30,13 @@
 
     @property (strong, nonatomic) NSMutableArray *controllers;
     @property (strong, nonatomic) UIScrollView *scrollview;
+    
     @property (weak, nonatomic) IBOutlet UIPageControl *pageController;
-
     @property (weak, nonatomic) IBOutlet UIButton *closeButton;
     @property (weak, nonatomic) IBOutlet UIButton *nextButton;
     @property (weak, nonatomic) IBOutlet UIButton *prevButton;
-
+    @property (weak, nonatomic) IBOutlet UIButton *ClosedBT;
+    
     @property (weak, nonatomic) IBOutlet UILabel *titlepage;
     @property (weak, nonatomic) IBOutlet UILabel *descriptionPage;
     @property (weak, nonatomic) IBOutlet UIImageView *imagePage;

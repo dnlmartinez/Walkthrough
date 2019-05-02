@@ -1,9 +1,9 @@
 //
-//  IT_Walkthrough.h
-//  IT_Walkthrough
+//  CSWWalkThroughViewController.m
+//  CSWWalkThroughDemo
 //
-//  Created by MacSivsa on 16/04/2019.
-//  Copyright © 2019 PSA. All rights reserved.
+//  Created by Christopher Worley on 2/9/15.
+//  Copyright (c) 2015 Christopher Worley. All rights reserved.
 //
 
 #import "WalkThroughViewController.h"
@@ -62,6 +62,7 @@
 	[vc.view setTranslatesAutoresizingMaskIntoConstraints:NO];
 	[self.scrollview addSubview:vc.view];
 
+    
 	NSLayoutFormatOptions options = 0;
 	NSDictionary *metricDict = @{@"w": @(SCREEN_WIDTH), @"h": @(SCREEN_HEIGHT)};
 	NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[view(h)]" options:options metrics:metricDict views:@{@"view":vc.view}];
@@ -148,7 +149,18 @@
 - (void)updateUI{
 	self.pageController.currentPage = self.currentPage;
 	[self.delegate walkthroughPageDidChange:self.currentPage];
-	[self.nextButton setHidden:(self.currentPage == [self.controllers count] - 1) ? YES : NO];
+	
+    //[self.nextButton setHidden:(self.currentPage == [self.controllers count] - 1) ? YES : NO];
+    
+    if (self.currentPage == [self.controllers count] - 1){
+        [self.nextButton setHidden:YES];
+        [self.closeButton setHidden:YES];
+        [self.ClosedBT setHidden:NO];
+    }else{
+        [self.closeButton setHidden:NO];
+        [self.ClosedBT setHidden:YES];
+    }
+    
 	[self.prevButton setHidden:(self.currentPage == 0) ? YES : NO];
 }
 

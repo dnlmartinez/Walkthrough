@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23794CCB227AE3C40066B7E2 /* iPhoneScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 23794CC6227AE3C30066B7E2 /* iPhoneScreen.png */; };
+		23794CCC227AE3C40066B7E2 /* closeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 23794CC7227AE3C30066B7E2 /* closeIcon.png */; };
+		23794CCD227AE3C40066B7E2 /* rightarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 23794CC8227AE3C30066B7E2 /* rightarrow.png */; };
+		23794CCE227AE3C40066B7E2 /* psa-avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 23794CC9227AE3C30066B7E2 /* psa-avatar.png */; };
+		23794CCF227AE3C40066B7E2 /* leftarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 23794CCA227AE3C30066B7E2 /* leftarrow.png */; };
 		237A8EC52265DCA6007DE0D4 /* IT_Walkthrough.h in Headers */ = {isa = PBXBuildFile; fileRef = 237A8EC32265DCA6007DE0D4 /* IT_Walkthrough.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		237A8ECE2265DCE7007DE0D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 237A8EC42265DCA6007DE0D4 /* Info.plist */; };
 		237A8ED02265DCFE007DE0D4 /* WalkthroughPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 237A8EA42265C4B8007DE0D4 /* WalkthroughPageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23794CC6227AE3C30066B7E2 /* iPhoneScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneScreen.png; sourceTree = "<group>"; };
+		23794CC7227AE3C30066B7E2 /* closeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeIcon.png; sourceTree = "<group>"; };
+		23794CC8227AE3C30066B7E2 /* rightarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightarrow.png; sourceTree = "<group>"; };
+		23794CC9227AE3C30066B7E2 /* psa-avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "psa-avatar.png"; sourceTree = "<group>"; };
+		23794CCA227AE3C30066B7E2 /* leftarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftarrow.png; sourceTree = "<group>"; };
 		237A8EA12265C4B8007DE0D4 /* WalkThroughViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkThroughViewController.m; sourceTree = "<group>"; };
 		237A8EA22265C4B8007DE0D4 /* WalkthroughPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkthroughPageViewController.m; sourceTree = "<group>"; };
 		237A8EA42265C4B8007DE0D4 /* WalkthroughPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkthroughPageViewController.h; sourceTree = "<group>"; };
@@ -56,6 +66,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		23794CC5227AE3C30066B7E2 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				23794CC6227AE3C30066B7E2 /* iPhoneScreen.png */,
+				23794CC7227AE3C30066B7E2 /* closeIcon.png */,
+				23794CC8227AE3C30066B7E2 /* rightarrow.png */,
+				23794CC9227AE3C30066B7E2 /* psa-avatar.png */,
+				23794CCA227AE3C30066B7E2 /* leftarrow.png */,
+			);
+			name = img;
+			path = IT_WalkThrough/img;
+			sourceTree = SOURCE_ROOT;
+		};
 		237A8EA02265C4B8007DE0D4 /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,7 @@
 		237A8EC22265DCA6007DE0D4 /* IT_Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
+				23794CC5227AE3C30066B7E2 /* img */,
 				237A8EC32265DCA6007DE0D4 /* IT_Walkthrough.h */,
 				237A8EC42265DCA6007DE0D4 /* Info.plist */,
 				237A8EA02265C4B8007DE0D4 /* src */,
@@ -160,7 +184,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23794CCB227AE3C40066B7E2 /* iPhoneScreen.png in Resources */,
+				23794CCE227AE3C40066B7E2 /* psa-avatar.png in Resources */,
 				237A8ECE2265DCE7007DE0D4 /* Info.plist in Resources */,
+				23794CCD227AE3C40066B7E2 /* rightarrow.png in Resources */,
+				23794CCF227AE3C40066B7E2 /* leftarrow.png in Resources */,
+				23794CCC227AE3C40066B7E2 /* closeIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

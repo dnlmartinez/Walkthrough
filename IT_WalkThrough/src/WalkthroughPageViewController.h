@@ -1,9 +1,9 @@
 //
-//  IT_Walkthrough.h
-//  IT_Walkthrough
+//  BWWalkthroughPageViewController.h
+//  DemoWalkthrough
 //
-//  Created by MacSivsa on 16/04/2019.
-//  Copyright © 2019 PSA. All rights reserved.
+//  Created by Christopher Worley on 4/15/15.
+//  Copyright (c) 2015 Christopher Worley. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

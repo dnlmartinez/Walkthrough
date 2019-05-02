@@ -10,19 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalkthroughPageViewController" customModule="IT_WalkThrough" customModuleProvider="target">
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="animationType">
-                    <integer key="value" value="3"/>
-                </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
-                    <point key="value" x="0.0" y="0.5"/>
-                </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="point" keyPath="speed">
-                    <point key="value" x="0.0" y="0.0"/>
-                </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="boolean" keyPath="animateAlpha" value="NO"/>
-            </userDefinedRuntimeAttributes>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalkthroughPageViewController">
             <connections>
                 <outlet property="descriptionPage" destination="Q8I-2S-ftc" id="ZFL-Rv-yeR"/>
                 <outlet property="iconPage" destination="9Ze-Ff-O21" id="Aqp-qd-5bv"/>
@@ -37,32 +25,32 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My IT Portal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mjg-1U-e4c">
-                    <rect key="frame" x="24" y="140" width="327" height="84"/>
+                    <rect key="frame" x="24" y="379" width="327" height="84"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="84" id="wzY-uW-qMb"/>
+                        <constraint firstAttribute="height" constant="84" id="2UI-PE-5iE"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the mobile version for My IT Portal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8I-2S-ftc">
-                    <rect key="frame" x="20" y="325.5" width="335" height="85"/>
+                    <rect key="frame" x="20" y="485" width="335" height="84"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="85" id="ihw-Fr-3II"/>
+                        <constraint firstAttribute="height" constant="84" id="vtz-cZ-Rli"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-aB-vMj">
-                    <rect key="frame" x="87.5" y="477" width="200" height="190"/>
+                    <rect key="frame" x="87.5" y="587" width="200" height="80"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="190" id="Cbu-ya-hh7"/>
+                        <constraint firstAttribute="height" constant="80" id="Cbu-ya-hh7"/>
                         <constraint firstAttribute="width" constant="200" id="V4q-fL-LPw"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="psa-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Ze-Ff-O21">
-                    <rect key="frame" x="161.5" y="230" width="52" height="52"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Ze-Ff-O21">
+                    <rect key="frame" x="161.5" y="282" width="52" height="52"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="I9z-LQ-xsn"/>
                         <constraint firstAttribute="width" constant="52" id="dO2-uW-Wn7"/>
@@ -72,18 +60,16 @@
             <color key="backgroundColor" name="primary"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="9AZ-aB-vMj" secondAttribute="bottom" id="0Dv-Ov-WcC"/>
-                <constraint firstAttribute="trailing" secondItem="Q8I-2S-ftc" secondAttribute="trailing" constant="20" id="1Z7-QX-LbZ"/>
-                <constraint firstAttribute="centerX" secondItem="Q8I-2S-ftc" secondAttribute="centerX" id="4oP-hP-M7Y"/>
-                <constraint firstAttribute="centerY" secondItem="Q8I-2S-ftc" secondAttribute="centerY" constant="-34.5" id="Agm-we-9Gl"/>
-                <constraint firstItem="Mjg-1U-e4c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="EBj-hv-1ma"/>
-                <constraint firstItem="9Ze-Ff-O21" firstAttribute="top" secondItem="Mjg-1U-e4c" secondAttribute="bottom" constant="6" id="HIV-BR-zUD"/>
+                <constraint firstItem="Q8I-2S-ftc" firstAttribute="top" secondItem="Mjg-1U-e4c" secondAttribute="bottom" constant="22" id="Fgr-9C-OQv"/>
+                <constraint firstAttribute="trailing" secondItem="Q8I-2S-ftc" secondAttribute="trailing" constant="20" id="JWl-fw-b4z"/>
+                <constraint firstAttribute="trailing" secondItem="Mjg-1U-e4c" secondAttribute="trailing" constant="24" id="Jbc-4F-7qh"/>
+                <constraint firstItem="Mjg-1U-e4c" firstAttribute="top" secondItem="9Ze-Ff-O21" secondAttribute="bottom" constant="45" id="KlJ-iv-fJD"/>
                 <constraint firstAttribute="bottom" secondItem="9AZ-aB-vMj" secondAttribute="bottom" id="NqP-hv-nvS"/>
+                <constraint firstItem="9AZ-aB-vMj" firstAttribute="top" secondItem="Q8I-2S-ftc" secondAttribute="bottom" constant="18" id="Sot-4A-5Md"/>
+                <constraint firstItem="Q8I-2S-ftc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="U8o-g9-tnN"/>
                 <constraint firstAttribute="centerX" secondItem="9AZ-aB-vMj" secondAttribute="centerX" id="cEB-CO-rJp"/>
-                <constraint firstItem="Q8I-2S-ftc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="kJZ-f3-RNZ"/>
-                <constraint firstAttribute="trailing" secondItem="Mjg-1U-e4c" secondAttribute="trailing" constant="24" id="kzh-vZ-2Sj"/>
                 <constraint firstItem="9AZ-aB-vMj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lHM-kj-UNQ"/>
-                <constraint firstAttribute="centerX" secondItem="Mjg-1U-e4c" secondAttribute="centerX" id="raU-JP-a8c"/>
-                <constraint firstItem="Mjg-1U-e4c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="uZo-XE-Joi"/>
+                <constraint firstItem="Mjg-1U-e4c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="qOe-2s-9Gc"/>
                 <constraint firstItem="9Ze-Ff-O21" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xxs-UL-HHj"/>
             </constraints>
             <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
@@ -91,7 +77,6 @@
     </objects>
     <resources>
         <image name="iPhoneScreen.png" width="326" height="392"/>
-        <image name="psa-avatar.png" width="120" height="168"/>
         <namedColor name="primary">
             <color red="0.10588235294117647" green="0.21176470588235294" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalkThroughViewController">
             <connections>
+                <outlet property="ClosedBT" destination="ekn-N7-aUr" id="K1b-Ku-SVF"/>
                 <outlet property="closeButton" destination="PO4-LO-P6a" id="ig3-i9-b76"/>
                 <outlet property="nextButton" destination="Yx8-TH-Nmb" id="Ah6-BJ-iUR"/>
                 <outlet property="pageController" destination="T5A-GY-XEf" id="aoD-Sb-Pds"/>
@@ -50,15 +50,16 @@
                         <action selector="nextPage:" destination="-1" eventType="touchUpInside" id="7Fb-oh-QCP"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO4-LO-P6a">
-                    <rect key="frame" x="536" y="34" width="48" height="29"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="CLOSE">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
+                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekn-N7-aUr">
+                    <rect key="frame" x="309" y="597" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3Mg-fi-3Bw"/>
+                        <constraint firstAttribute="width" constant="50" id="hid-0a-9jW"/>
+                    </constraints>
+                    <state key="normal" image="closeIcon.png"/>
                     <connections>
-                        <action selector="close:" destination="-1" eventType="touchUpInside" id="k7A-9A-2Nl"/>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="mMu-CO-1aP"/>
                     </connections>
                 </button>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="T5A-GY-XEf">
@@ -70,6 +71,21 @@
                     <color key="pageIndicatorTintColor" name="colorAccent"/>
                     <color key="currentPageIndicatorTintColor" white="0.98231026789999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO4-LO-P6a">
+                    <rect key="frame" x="298" y="46" width="61" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sIK-Em-B0W"/>
+                        <constraint firstAttribute="width" constant="61" id="y4r-de-XHs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Skip">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="k7A-9A-2Nl"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" name="primary"/>
             <constraints>
@@ -79,8 +95,10 @@
                 <constraint firstItem="PO4-LO-P6a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="26" id="BHT-2O-0xU"/>
                 <constraint firstAttribute="trailing" secondItem="PO4-LO-P6a" secondAttribute="trailing" constant="16" id="LyU-Un-9VQ"/>
                 <constraint firstAttribute="bottom" secondItem="ELa-Pr-CTk" secondAttribute="bottom" constant="20" id="SRT-2Z-WWU"/>
+                <constraint firstAttribute="trailing" secondItem="ekn-N7-aUr" secondAttribute="trailing" constant="16" id="hGa-ed-tkD"/>
                 <constraint firstAttribute="bottom" secondItem="Yx8-TH-Nmb" secondAttribute="bottom" constant="20" id="nMQ-a2-41z"/>
                 <constraint firstItem="T5A-GY-XEf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rRp-1Y-CRd"/>
+                <constraint firstAttribute="bottom" secondItem="ekn-N7-aUr" secondAttribute="bottom" constant="20" id="xlh-R3-eh0"/>
                 <constraint firstItem="ELa-Pr-CTk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="zNx-I1-1Pi"/>
             </constraints>
             <variation key="default">
@@ -88,9 +106,11 @@
                     <exclude reference="A2J-bR-VP9"/>
                 </mask>
             </variation>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
     </objects>
     <resources>
+        <image name="closeIcon.png" width="512" height="512"/>
         <image name="leftarrow.png" width="100" height="100"/>
         <image name="rightarrow.png" width="100" height="100"/>
         <namedColor name="colorAccent">

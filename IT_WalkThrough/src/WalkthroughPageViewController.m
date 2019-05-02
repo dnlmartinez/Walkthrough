@@ -1,21 +1,19 @@
 //
-//  IT_Walkthrough.h
-//  IT_Walkthrough
+//  BWWalkthroughPageViewController.m
+//  DemoWalkthrough
 //
-//  Created by MacSivsa on 16/04/2019.
-//  Copyright © 2019 PSA. All rights reserved.
+//  Created by Christopher Worley on 4/15/15.
+//  Copyright (c) 2015 Christopher Worley. All rights reserved.
 //
 
 #import "WalkthroughPageViewController.h"
 
 typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
-	WalkthroughAnimationLinear,  /// Notification won't animate
-	WalkthroughAnimationCurve,   /// Notification will move in from the top, and move out again to the top
-	WalkthroughAnimationZoom,    /// Notification will fall down from the top and bounce a little bit
-	WalkthroughAnimationInOut    /// Notification will fade in and fade out
+	WalkthroughAnimationLinear,
+	WalkthroughAnimationCurve,
+	WalkthroughAnimationZoom,
+	WalkthroughAnimationInOut
 };
-
-
 
 
 @interface WalkthroughPageViewController () <WalkthroughPage>{
@@ -27,8 +25,6 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
 }
 
 @end
-
-
 
 
 @implementation WalkthroughPageViewController
@@ -103,7 +99,7 @@ typedef NS_ENUM(NSInteger, WalkthroughAnimationType) {
 - (void)walkthroughDidScroll:(CGFloat)position  offset:(CGFloat)offset{
 
 	for (int i = 0; i < [subsWeights count] ;i++){
-		switch (animationType){
+        switch (animationType){
 			case WalkthroughAnimationLinear:
 				[self animationLinear:i offset:offset];
 				break;
